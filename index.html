@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Meme Generator</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        input, button { margin: 10px; padding: 10px; }
+        img { max-width: 100%; height: auto; margin-top: 10px; }
+        .files{
+            width: 250px;
+            height: 200px;
+           
+            box-shadow: 0 2px 4px 0.5px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 25px auto;
+            padding-top: 20px;
+            background-color: aliceblue;
+            
+
+        }
+        input[type="file"]{
+            
+        }
+        .upimg{
+            width: 20%;
+        }
+        .meme{
+            background-color: aqua;
+            width: 25%;
+            border-radius: 10px;
+        }
+        body{
+            background-color:rgb(248, 196, 134);
+        }
+        .files:hover{
+            background-color: bisque;
+            border-radius: 0px;
+
+            
+        }
+        .meme:hover{
+            border: 4px blue ;
+            border-color: blue;
+        }
+        
+        .h1{
+            background-color: green;
+            color: antiquewhite;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="h1">
+    <h2>AI Meme Generator</h2>
+    <p>This is a ai genareted meme maker. just give an picture and you will get an
+        ai genareted meme base on your picture.
+    </p>
+</div>
+    <br>
+    <br>
+    <br>
+    <div class="files">
+    <img src="plus-sign-in-a-square.svg" class="upimg">
+    <input type="file" id="uploadInput">
+    </div>
+    <button onclick="uploadImage()" class="meme">Generate Meme</button>
+
+    <h3 id="caption"></h3>
+    <img id="memeImage" src="" alt="Meme here">
+
+    <script src="sel_img.js" defer></script>
+
+</body>
+</html>
